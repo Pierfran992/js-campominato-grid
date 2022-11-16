@@ -29,8 +29,8 @@ play.addEventListener("click",
             // aggiungo all'elemento creato un evento al click dello stesso
             newElement.addEventListener("click",
                 function() {
-                    this.classList.toggle("ms_click");
-                    console.log(this.innerHTML);
+                    this.classList.add("ms_click");
+                    console.log(this.innerHTML); //con .innerHTML nel console.log() posso stampare il contenuto degli elementi html
                 }
             );
 
