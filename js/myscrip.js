@@ -30,6 +30,9 @@ play.addEventListener("click",
             newElement.addEventListener("click",
                 function() {
                     this.classList.toggle("ms_click");
+                    let divBox = document.querySelector(".ms_box");
+                    let elementValue = divBox.value;
+                    console.log(elementValue);
                 }
             );
 
@@ -41,7 +44,6 @@ play.addEventListener("click",
         }
     }
 );
-
 
 // FUNZIONI
 // Creo la funzione per generare vari elementi con classi o id
