@@ -31,7 +31,7 @@ play.addEventListener("click",
                 function() {
                     this.classList.add("ms_click");
                     console.log(this.innerHTML); //con .innerHTML nel console.log() posso stampare il contenuto degli elementi html
-                }
+                }, {once: true}
             );
 
             // inserisco nell'elemento il valore di i
