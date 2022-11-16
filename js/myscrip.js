@@ -30,9 +30,7 @@ play.addEventListener("click",
             newElement.addEventListener("click",
                 function() {
                     this.classList.toggle("ms_click");
-                    let divBox = document.querySelector(".ms_box");
-                    let elementValue = divBox.value;
-                    console.log(elementValue);
+                    console.log(this.innerHTML);
                 }
             );
 
