@@ -83,15 +83,19 @@ header img {
 }
 
 .ms_box {
+    color: #150050;
+    background-color: #fff;
     width: 10%;
     height: 50px;
-    background-color: #fff;
+    text-align: center;
+    line-height: 50px;
     border: solid 2px #000000;
     cursor: pointer;
 }
 
 .ms_box.ms_click {
     background-color: #150050;
+    color: #fff;
 }
 
 /* footer rules */

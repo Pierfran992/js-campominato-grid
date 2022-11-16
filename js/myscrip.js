@@ -20,7 +20,7 @@ play.addEventListener("click",
         msInstructions.classList.add("ms_none");
 
         // creo il ciclo for per creare le 100 caselle nel DOM
-        for(i = 0; i < 100; i++) {
+        for(i = 1; i <= 100; i++) {
 
             // creo un nuovo elemento 
             let newElement = createElement("div", "ms_box");
@@ -33,14 +33,14 @@ play.addEventListener("click",
                 }
             );
 
+            // inserisco nell'elemento il valore di i
+            newElement.append([i]);
+
             // inserisco nel DOM il nuovo elemento creato
             container.appendChild(newElement);
         }
     }
 );
-
-
-
 
 
 // FUNZIONI
