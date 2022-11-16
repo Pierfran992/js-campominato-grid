@@ -68,6 +68,20 @@ header img {
     flex-wrap: wrap;
 }
 
+.ms_instructions {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.ms_instructions > p {
+    margin: 20px 0;
+}
+
+.ms_none {
+    display: none;
+}
+
 .ms_box {
     width: 10%;
     height: 50px;
