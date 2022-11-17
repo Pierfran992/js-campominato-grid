@@ -15,12 +15,16 @@ const play = document.querySelector("div.ms_play");
 play.addEventListener("click", 
     function() {
 
-        // richiamo il div con classe .ms_instructions così da farlo sparire con display none
-        let msInstructions = document.querySelector("div.ms_instructions");
-        msInstructions.classList.add("ms_none");
+        // svuoto il container
+        container.innerHTML = '';
+        console.clear();
+
+        // // richiamo il div con classe .ms_instructions così da farlo sparire con display none
+        // let msInstructions = document.querySelector("div.ms_instructions");
+        // msInstructions.classList.add("ms_none");
 
         // creo il ciclo for per creare le 100 caselle nel DOM
-        for(i = 1; i <= 100; i++) {
+        for(let i = 1; i <= 100; i++) {
 
             // creo un nuovo elemento 
             let newElement = createElement("div", "ms_box");
@@ -30,7 +34,7 @@ play.addEventListener("click",
             newElement.addEventListener("click",
                 function() {
                     this.classList.add("ms_click");
-                    console.log(this.innerHTML); //con .innerHTML nel console.log() posso stampare il contenuto degli elementi html
+                    console.log(i); //con .innerHTML nel console.log(this.innerHTML) posso stampare il contenuto degli elementi html
                 }, {once: true}
             );
 
